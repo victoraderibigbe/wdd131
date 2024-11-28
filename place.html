@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W03 Assignment</title>
+    <meta name="description" content="WDD 131 - W03 Assignment">
+    <meta name="author" content="Victor Aderibigbe">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Nigeria</h1>
+    </header>
+
+    <main>
+        <div class="hero">
+            <div></div>
+            <picture>
+                <source srcset="images/hero-landscape-large.webp" media="(min-width: 1000px)">
+                <source srcset="images/hero-landscape-medium.webp" media="(min-width: 500px)">
+                <img src="images/hero-landscape-small.webp" alt="Nigeria's beautiful landscape">
+            </picture>
+            <div></div>
+        </div>
+
+        <div class="details">
+            <div class="data">
+                <h2>Data</h2>
+                <ul>
+                    <li> <span>Area:</span> 923,769 sq km</li>
+                    <li> <span>Population:</span> 223,804,632</li>
+                    <li> <span>Capital:</span> Abuja</li>
+                    <li> <span>Languages:</span> English (official), Hausa, Yoruba, Igbo, and others</li>
+                    <li> <span>Currency:</span> Nigerian Naira (NGN)</li>
+                    <li> <span>Time Zone:</span> UTC+1</li>
+                    <li> <span>Calling Code:</span> +234</li>
+                    <li> <span>Internet TLD:</span> .ng</li>
+                </ul>
+            </div>
+            <div class="weather">
+                <h2>Weather</h2>
+                <img src="images/weather-icon.svg" alt="Weather icon" width="100">
+                <ul>
+                    <li><span>Temperature:</span> 24 ℃</li>
+                    <li><span>Conditions:</span> Cool</li>
+                    <li><span>Wind:</span> 3 km/h</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentYear"></span> | Victor Aderibigbe | Nigeria</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
