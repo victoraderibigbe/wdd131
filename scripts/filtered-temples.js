@@ -99,7 +99,7 @@ const temples = [
 
 const hamButton = document.querySelector("#menu");
 const navigation = document.querySelector(".navigation");
-const main = document.querySelector("main");
+const filterTitle = document.querySelector("#filterTitle");
 const homeFilter = document.querySelector(".home");
 const oldFilter = document.querySelector(".old");
 const newFilter = document.querySelector(".new");
@@ -111,9 +111,6 @@ hamButton.addEventListener("click", () => {
   navigation.classList.toggle("open");
   hamButton.classList.toggle("open");
 });
-
-const filterTitle = document.createElement("h2");
-main.insertBefore(filterTitle, main.firstChild);
 
 document.addEventListener("DOMContentLoaded", () => {
   filterTitle.textContent = "Home";

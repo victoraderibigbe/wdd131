@@ -46,20 +46,23 @@ h1 {
 }
 
 .navigation li {
+  cursor: pointer;
+}
+
+.navigation a {
   display: none;
   padding: 1rem;
   text-align: center;
   text-decoration: none;
   color: #fff;
-  cursor: pointer;
-}
-
-.navigation li:hover {
-  color: #ffc300;
   font-weight: 700;
 }
 
-.open li {
+.navigation li:hover a:hover {
+  color: #ffc300;
+}
+
+.open a {
   display: block;
 }
 
