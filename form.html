@@ -21,8 +21,8 @@
     <main>
         <form action="review.html" method="get" class="product-form">
             <div class="form-group">
+                <p class="required-label">Product Name</p>
                 <label>
-                    <p class="required-label">Product Name</p>
                     <select name="productName" id="product" required>
                         <option value="" disabled selected>Select Product</option>
                     </select>
@@ -50,21 +50,21 @@
                     </label>
                     <label>
                         &star;&star;&star;&star;&star;
-                        <input type="radio" name="stars" id="fourstars" value="5" required>
+                        <input type="radio" name="stars" id="fivestars" value="5" required>
                     </label>
                 </div>
             </div>
 
             <div class="form-group">
+                <p class="required-label">Date of Installation</p>
                 <label>
-                    <p class="required-label">Date of Installation</p> <input type="date" name="dateOfInstallation"
-                        id="dateOfInstallation" required>
+                    <input type="date" name="dateOfInstallation" id="dateOfInstallation" required>
                 </label>
             </div>
 
             <div class="form-group features">
                 <p>Which features did you find useful in the product?</p>
-                <i>(Check all the apply)</i>
+                <i>(Check all that apply)</i>
                 <label><input type="checkbox" name="durability" id="durability" value="yes">Durability</label>
                 <label><input type="checkbox" name="ease" id="ease" value="yes">Ease of Use</label>
                 <label><input type="checkbox" name="performance" id="performance" value="yes">Performance</label>
@@ -72,14 +72,16 @@
             </div>
 
             <div class="form-group">
+                <p class="optional-label">Written Review</p>
                 <label>
-                    <p class="optional-label">Written Review</p> <textarea name="review" id="review"></textarea>
+                    <textarea name="review" id="review"></textarea>
                 </label>
             </div>
 
             <div class="form-group">
+                <p class="optional-label">Your Name</p>
                 <label>
-                    <p class="optional-label">Your Name</p> <input type="text" name="username" id="username">
+                    <input type="text" name="username" id="username">
                 </label>
             </div>
 
