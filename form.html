@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review</title>
+    <meta name="description" content="WDD 131 - Product Review Form assignment">
+    <meta name="author" content="Victor Aderibigbe">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form-large.css">
+    <script src="scripts/form.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+
+    <main>
+        <form action="review.html" method="get" class="product-form">
+            <div class="form-group">
+                <label>
+                    <p class="required-label">Product Name</p>
+                    <select name="productName" id="product" required>
+                        <option value="" disabled selected>Select Product</option>
+                    </select>
+                </label>
+            </div>
+
+            <div class="form-group">
+                <p class="required-label">Overall Rating</p>
+                <div class="stars">
+                    <label>
+                        &star;
+                        <input type="radio" name="stars" id="onestar" value="1" required>
+                    </label>
+                    <label>
+                        &star;&star;
+                        <input type="radio" name="stars" id="twostars" value="2" required>
+                    </label>
+                    <label>
+                        &star;&star;&star;
+                        <input type="radio" name="stars" id="threestars" value="3" required>
+                    </label>
+                    <label>
+                        &star;&star;&star;&star;
+                        <input type="radio" name="stars" id="fourstars" value="4" required>
+                    </label>
+                    <label>
+                        &star;&star;&star;&star;&star;
+                        <input type="radio" name="stars" id="fourstars" value="5" required>
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>
+                    <p class="required-label">Date of Installation</p> <input type="date" name="dateOfInstallation"
+                        id="dateOfInstallation" required>
+                </label>
+            </div>
+
+            <div class="form-group features">
+                <p>Which features did you find useful in the product?</p>
+                <i>(Check all the apply)</i>
+                <label><input type="checkbox" name="durability" id="durability" value="yes">Durability</label>
+                <label><input type="checkbox" name="ease" id="ease" value="yes">Ease of Use</label>
+                <label><input type="checkbox" name="performance" id="performance" value="yes">Performance</label>
+                <label><input type="checkbox" name="design" id="design" value="yes">Design</label>
+            </div>
+
+            <div class="form-group">
+                <label>
+                    <p class="optional-label">Written Review</p> <textarea name="review" id="review"></textarea>
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label>
+                    <p class="optional-label">Your Name</p> <input type="text" name="username" id="username">
+                </label>
+            </div>
+
+            <input type="submit" value="Post Review">
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentYear"></span> | Victor Aderibigbe | Nigeria</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>

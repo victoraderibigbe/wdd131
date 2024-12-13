@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, sans-serif;
+}
+
+header {
+  background-color: #3c0a64;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.8rem;
+}
+
+main {
+  padding: 2rem 1rem;
+  margin: 1rem 0;
+  background-color: #ecdcf9;
+}
+
+.product-form .form-group {
+  margin-bottom: 1.5rem;
+}
+
+.product-form label {
+  display: block;
+  font-size: 0.9rem;
+}
+
+label,
+p,
+i {
+  font-weight: 500;
+}
+
+.product-form div {
+  font-size: 0.9rem;
+}
+
+.product-form input[type="text"],
+.product-form input[type="date"],
+.product-form select,
+.product-form textarea {
+  background-color: #fff;
+  display: block;
+  border: solid 1px #ccc;
+  border-radius: 6px;
+  padding: 1rem;
+  color: #555;
+  width: 100%;
+  max-width: 400px;
+  appearance: none;
+}
+
+.product-form textarea {
+  height: 100px;
+}
+
+.stars {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 400px;
+}
+
+.stars label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  gap: 0.2rem;
+}
+
+.features label {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  padding: 0.2rem 0;
+}
+
+.product-form input[type="submit"] {
+  border: none;
+  background-color: #3c0a64;
+  color: #fff;
+  border-radius: 6px;
+  padding: 1rem;
+  width: 100%;
+  max-width: 400px;
+  font-size: 1rem;
+}
+
+.required-label::after {
+  content: "*";
+  color: red;
+  margin-left: 0.2rem;
+}
+
+.optional-label::after {
+  content: "(Optional)";
+  color: #3b0467;
+  margin-left: 0.2rem;
+}
+
+.required-label,
+.optional-label {
+  margin-bottom: 0.2rem;
+}
+
+.review-body {
+  min-height: 75vh;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #3b0467;
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  margin: 2rem auto;
+}
+
+footer {
+  background-color: #3c0a64;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+footer p {
+  margin: 0.5rem auto;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
