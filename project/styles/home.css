@@ -1,0 +1,31 @@
+main {
+  background-image: url("/project/images/bg-small.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.home-intro,
+.wellness-tip {
+  background-color: rgba(212, 211, 211, 0.8);
+  padding: 1rem;
+  margin: 3rem 0;
+  text-align: center;
+  border-radius: 0.5rem;
+}
+
+h1,
+h2 {
+  color: var(--primary-color);
+}
+
+.home-intro p {
+  color: var(--text-color);
+  line-height: 1.5;
+  font-weight: 600;
+}
+
+.wellness-tip p {
+  color: var(--text-color);
+  line-height: 1.5;
+  font-weight: 600;
+}
