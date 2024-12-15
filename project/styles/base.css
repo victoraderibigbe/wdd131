@@ -5,11 +5,11 @@
 }
 
 :root {
-  --primary-color: #4a90e2;
-  --secondary-color: #a3d9a5;
+  --primary-color: #1c5d99;
+  --secondary-color: #7ecf9b;
   --accent-color: #d6c3fc;
   --danger-color: #f8c3a3;
-  --neutral-color: #f5f5f5;
+  --neutral-color: #ffffff;
   --text-color: #333333;
   --primary-font: "Open Sans", Sans-serif;
   --secondary-font: "Lora", Sans-serif;
@@ -28,12 +28,13 @@ h4,
 h5,
 h6 {
   font-family: var(--secondary-font);
-  padding: 0.5rem 0;
+  padding-bottom: 1rem;
 }
 
 p {
   text-align: justify;
-  line-height: 1.8;
+  line-height: 1.5;
+  font-size: 0.9rem;
   color: var(--text-color);
 }
 
@@ -54,6 +55,14 @@ header {
   font-family: cursive;
   font-weight: 700;
   font-size: 1.5rem;
+}
+
+.logo span:first-child {
+  color: var(--secondary-color);
+}
+
+.logo span:last-child {
+  color: var(--danger-color);
 }
 
 #menu {
@@ -89,7 +98,7 @@ header {
 
 .nav-items a {
   display: none;
-  padding: 1rem;
+  padding: 0.5rem;
   text-align: center;
   text-decoration: none;
   color: var(--neutral-color);
@@ -97,7 +106,7 @@ header {
 }
 
 .nav-items li:hover a:hover {
-  color: var(--accent-color);
+  color: var(--secondary-color);
 }
 
 .open a {
@@ -106,7 +115,7 @@ header {
 
 main {
   padding: 2rem 1rem;
-  min-height: 75vh;
+  min-height: 85vh;
 }
 
 footer {
@@ -117,5 +126,31 @@ footer {
 footer p {
   text-align: center;
   color: var(--neutral-color);
-  margin: 0.5rem auto;
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    display: flex;
+    padding: 1rem 2rem;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  .nav-items {
+    flex-direction: row;
+  }
+
+  .nav-items a {
+    display: block;
+    flex: 1 1 100%;
+    padding: 0 1rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .nav-items a {
+    padding: 0 2rem;
+  }
 }

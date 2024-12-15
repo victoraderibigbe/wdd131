@@ -1,0 +1,43 @@
+@media screen and (min-width: 768px) {
+  p {
+    font-size: 1rem;
+  }
+
+  main {
+    background-image: url("/project/images/bg-large.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 2.5rem;
+  }
+
+  .home-intro,
+  .wellness-tip {
+    padding: 3rem 2rem;
+    margin: 0;
+    text-align: center;
+    border-radius: 0.5rem;
+    max-width: 400px;
+    width: 100%;
+  }
+
+  .home-intro {
+    align-self: flex-start;
+  }
+
+  .wellness-tip {
+    align-self: flex-end;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  p {
+    font-size: 1.2rem;
+  }
+  
+  main {
+    justify-content: space-around;
+  }
+}
