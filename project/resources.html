@@ -1,11 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Healthy Habits</title>
+    <meta name="description" content="SereniTrack - Personal Wellness Tracker project">
+    <meta name="author" content="Victor Aderibigbe">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/resources.css">
+    <link rel="stylesheet" href="styles/resources-large.css">
+
+    <script src="scripts/script.js" defer></script>
+    <script src="scripts/resources.js" defer></script>
+    <script src="../scripts/getdates.js" defer></script>
 </head>
+
 <body>
-    
+    <header>
+        <div class="logo">
+            <a href="/project/index.html"><span>Sereni</span><span>Track.</span></a>
+        </div>
+        <button id="menu"></button>
+        <nav>
+            <ul class="nav-items">
+                <li><a href="/project/index.html">Home</a></li>
+                <li><a href="/project/tracker.html">Tracker</a></li>
+                <li><a href="/project/resources.html">Resources</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <picture>
+                <source srcset="images/veg-hero-large.webp" media="(min-width: 768px)">
+                <img src="images/veg-hero-small.webp" alt="A vegetarian at work" loading="lazy">
+            </picture>
+
+            <div class="hero-content">
+                <h1>Healthy Habits</h1>
+                <p>Explore simple yet powerful tips to nurture your mind, body, and soul.</p>
+            </div>
+        </section>
+
+        <section class="section2">
+            <div class="quick-tips">
+                <h2>Quick Tips</h2>
+                <q>Drink a glass of water first thing in the morning to kickstart your metabolism.</q>
+            </div>
+            <div class="categories">
+                <div class="physical-health category">
+                    <div class="toggle-btn">
+                        <h4>Physical Health <span>(Move Your Body)</span></h4>
+                        <img src="images/arrow-down.png" alt="Arrow Down icon">
+                    </div>
+                    <div class="toggle-content">
+                        <ul>
+                            <li><a href="#">Stay Hydrated</a></li>
+                            <li><a href="#">Engage in Regular Exercise</a></li>
+                            <li><a href="#">Get enough Sleep</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mental-wellness category">
+                    <div class="toggle-btn">
+                        <h4>Mental Wellness <span>(Mind Matters)</span></h4>
+                        <img src="images/arrow-down.png" alt="Arrow Down icon">
+                    </div>
+                    <div class="toggle-content">
+                        <ul>
+                            <li><a href="#">Set a Good Sleep Schedule</a></li>
+                            <li><a href="#">Create a Healthy Diet</a></li>
+                            <li><a href="#">Practice Mindfulness</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="nutrition-tips category">
+                    <div class="toggle-btn">
+                        <h4>Nutrition tips <span>(Fuel Your Body)</span></h4>
+                        <img src="images/arrow-down.png" alt="Arrow Down icon">
+                    </div>
+                    <div class="toggle-content">
+                        <ul>
+                            <li><a href="#">Eat a Balanced Diet</a></li>
+                            <li><a href="#">Limit Excessive Sugar</a></li>
+                            <li><a href="#">Practice Hydration</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sleep-and-relaxtion category">
+                    <div class="toggle-btn">
+                        <h4>Sleep and Relaxation <span>(Rest and Recharge)</span></h4>
+                        <img src="images/arrow-down.png" alt="Arrow Down icon">
+                    </div>
+                    <div class="toggle-content">
+                        <ul>
+                            <li><a href="#">Create a Healthy Sleep Schedule</a></li>
+                            <li><a href="#">Engage in Regular Exercise</a></li>
+                            <li><a href="#">Get enough Sleep</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="tools">
+                <h2>Featured Tools and Resources</h2>
+                <ul>
+                    <li><span><a href="#">Headspace:</a></span>Meditation and Mindfulness</li>
+                    <li><span><a href="#">MyFitnessPal:</a></span>Nutrition and Fitness Tracking</li>
+                    <li><span><a href="#">Calm:</a></span>Sleep and Relaxation Support</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentYear"></span> | Victor Aderibigbe | Nigeria</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
 </body>
+
 </html>

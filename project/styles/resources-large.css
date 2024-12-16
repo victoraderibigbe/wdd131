@@ -1,0 +1,22 @@
+@media screen and (min-width: 768px) {
+  .hero-content {
+    padding: 3rem;
+  }
+
+  .section2 {
+    padding: 1rem 2rem;
+    grid-template-columns: 1fr 2fr 1fr;
+  }
+
+  .quick-tips,
+  .tools {
+    align-items: center;
+    justify-content: start;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .section2 {
+    padding: 4rem 2rem;
+  }
+}

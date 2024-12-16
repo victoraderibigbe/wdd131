@@ -4,9 +4,10 @@
   }
 
   main {
-    background-image: url("/project/images/bg-large.webp");
+    background-image: url("/project/images/vegetarian.webp");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     padding: 2rem;
     display: flex;
     justify-content: space-between;
@@ -27,6 +28,10 @@
     align-self: flex-start;
   }
 
+  .home-intro button {
+    max-width: 220px;
+  }
+
   .wellness-tip {
     align-self: flex-end;
   }
@@ -36,7 +41,7 @@
   p {
     font-size: 1.2rem;
   }
-  
+
   main {
     justify-content: space-around;
   }
