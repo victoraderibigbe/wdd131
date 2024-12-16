@@ -216,22 +216,24 @@ const editLog = (logToEdit, cardElement) => {
 };
 
 const recordEntries = () => {
-  const entriesBox = document.querySelector("#quoteBox .entries");
+  const entriesBoxes = document.querySelectorAll(".quote-box .entries");
 
-  const pElement = document.createElement("p");
-  entriesBox.appendChild(pElement);
-
-  const logs = JSON.parse(localStorage.getItem("logs")) || [];
-
-  if (logs.length <= 0) {
-    pElement.textContent = "You haven't logged in yet";
-    pElement.style.fontSize = "1rem";
-    pElement.style.fontWeight = 500;
+  entriesBoxes.forEach((entriesBox) => {
+    const pElement = document.createElement("p");
     entriesBox.appendChild(pElement);
-    return;
-  }
 
-  console.log(logs.length);
-  pElement.textContent = logs.length;
-  entriesBox.appendChild(pElement);
+    const logs = JSON.parse(localStorage.getItem("logs")) || [];
+
+    if (logs.length <= 0) {
+      pElement.textContent = "You haven't logged in yet";
+      pElement.style.fontSize = "1rem";
+      pElement.style.fontWeight = 500;
+      entriesBox.appendChild(pElement);
+      return;
+    }
+
+    console.log(logs.length);
+    pElement.textContent = logs.length;
+    entriesBox.appendChild(pElement);
+  });
 };
