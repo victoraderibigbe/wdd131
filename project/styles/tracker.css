@@ -1,0 +1,223 @@
+.hero {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero picture img {
+  max-width: 100vw;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 600px;
+}
+
+.hero-content h1 {
+  color: var(--danger-color);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  color: var(--neutral-color);
+  text-align: center;
+}
+
+.interactive-logs {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.log-form {
+  border: 1px solid var(--secondary-color);
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.log-form h2 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.log-form label {
+  display: block;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.log-form input[type="text"],
+.log-form input[type="date"],
+.log-form select,
+textarea {
+  display: block;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 1rem;
+  color: #555;
+  width: 100%;
+  max-width: 400px;
+  appearance: none;
+  margin-top: 0.2rem;
+}
+
+.log-form textarea {
+  min-height: 100px;
+}
+
+.log-form input[type="submit"] {
+  border: none;
+  background-color: var(--primary-color);
+  color: #fff;
+  border-radius: 6px;
+  padding: 1rem;
+  width: 100%;
+  max-width: 400px;
+  font-size: 1rem;
+}
+
+.required-label::after {
+  content: "*";
+  color: red;
+  margin-left: 0.2rem;
+}
+
+.optional-label::after {
+  content: "(Optional)";
+  color: var(--primary-color);
+  margin-left: 0.2rem;
+}
+
+.user-logs nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8rem 0;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 1rem;
+}
+
+.user-logs h2 {
+  color: var(--primary-color);
+}
+
+.user-logs .icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.user-logs .icon-box img {
+  max-width: 30px;
+  width: 100%;
+}
+
+.user-logs .card-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.user-logs .card-container .card {
+  background-color: #f9f9f9;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.user-logs .card-container .card:hover {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  transition: ease-in-out;
+  transition-duration: 0.3s;
+}
+
+.user-logs .card-container .card .card-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.5rem;
+}
+
+.user-logs .card-container .card .card-title p {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.user-logs .card-container .card .card-options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.user-logs .card-container .card button {
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+  border: none;
+  font-weight: 600;
+}
+
+.user-logs .card-container .card #editButton {
+  background-color: var(--secondary-color);
+  color: var(--neutral-color);
+}
+
+.user-logs .card-container .card #deleteButton {
+  background-color: var(--danger-color);
+  color: var(--text-color);
+}
+
+.entries-cta-large {
+  display: none;
+}
+
+.entries-cta-small {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.entries-cta-small div {
+  padding: 2rem;
+  text-align: center;
+  border: 1px solid var(--secondary-color);
+  border-radius: 0.5rem;
+  color: var(--text-color);
+}
+
+.entries-cta-small .entries h2 {
+  color: var(--primary-color);
+}
+
+.entries-cta-small .entries p {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.entries-cta-small .cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: 600;
+}

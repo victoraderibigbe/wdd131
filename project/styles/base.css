@@ -28,7 +28,10 @@ h4,
 h5,
 h6 {
   font-family: var(--secondary-font);
-  padding-bottom: 1rem;
+}
+
+h1 {
+  font-size: 1.5rem;
 }
 
 p {
@@ -40,6 +43,18 @@ p {
 
 a {
   text-decoration: none;
+}
+
+button,
+input[type="submit"] {
+  cursor: pointer;
+}
+
+button:hover,
+input[type="submit"]:hover {
+  opacity: 0.8;
+  transition: ease-in-out;
+  transition-duration: 0.3s;
 }
 
 header {
@@ -114,7 +129,6 @@ header {
 }
 
 main {
-  padding: 2rem 1rem;
   min-height: 85vh;
 }
 
@@ -129,6 +143,14 @@ footer p {
 }
 
 @media screen and (min-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
   header {
     display: flex;
     padding: 1rem 2rem;

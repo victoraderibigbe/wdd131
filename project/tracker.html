@@ -1,11 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Wellness Journal</title>
+    <meta name="description" content="SereniTrack - Personal Wellness Tracker project">
+    <meta name="author" content="Victor Aderibigbe">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/tracker.css">
+    <link rel="stylesheet" href="styles/tracker-large.css">
+
+    <script src="scripts/script.js" defer></script>
+    <script src="../scripts/getdates.js" defer></script>
 </head>
+
 <body>
-    
+    <header>
+        <div class="logo">
+            <a href="/project/index.html"><span>Sereni</span><span>Track.</span></a>
+        </div>
+        <button id="menu"></button>
+        <nav>
+            <ul class="nav-items">
+                <li><a href="/project/index.html">Home</a></li>
+                <li><a href="/project/tracker.html">Tracker</a></li>
+                <li><a href="/project/resources.html">Resources</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <picture>
+                <source srcset="images/veg-hero-large.webp" media="(min-width: 768px)">
+                <img src="images/veg-hero-small.webp" alt="A vegetarian at work" loading="lazy">
+            </picture>
+
+            <div class="hero-content">
+                <h1>My Wellness Journal</h1>
+                <p>Track your journey to balance and well-being. Every log brings you closer to your goals.</p>
+            </div>
+        </section>
+        <section class="interactive-logs">
+            <div>
+                <form class="log-form">
+                    <h2>Log Your Activities</h2>
+                    <label>
+                        <p class="required-label">Date</p> <input type="date" name="date" id="date" required>
+                    </label>
+                    <label>
+                        <p class="required-label">Mood</p>
+                        <select name="mood" id="mood" required>
+                            <option value="" disabled selected>Please select</option>
+                            <option value="happy">Happy</option>
+                            <option value="sad">Sad</option>
+                            <option value="neutral">Neutral</option>
+                            <option value="calm">Calm</option>
+                            <option value="stressed">Stressed</option>
+                            <option value="tired">Tired</option>
+                        </select>
+                    </label>
+                    <label>
+                        <p class="required-label">Activities</p> <input type="text" name="activities" required>
+                    </label>
+                    <label>
+                        <p class="optional-label">Personal Notes</p> <textarea name="notes" id="notes"></textarea>
+                    </label>
+                    <input type="submit" value="Add My Entry" id="addBtn">
+                </form>
+                <!-- Only for large screens -->
+                <div class="entries-cta-large">
+                    <div class="entries">
+                        <h2>Entries</h2>
+                        <p>2</p>
+                    </div>
+                    <div class="cta">
+                        <q>Consistency is key! Log your activities daily to unlock patterns and insights into your
+                            wellness.</q>
+                    </div>
+                </div>
+            </div>
+            <div class="user-logs">
+                <nav>
+                    <h2>Your Logs</h2>
+                    <div class="icon-box">
+                        <img src="images/filter-icon.png" alt="filter icon">
+                        <img src="images/sort-icon.png" alt="Sort icon">
+                    </div>
+                </nav>
+                <div class="card-container">
+                    <div class="card">
+                        <div class="card-title">
+                            <p class="mood">I'm happy</p>
+                            <i class="date">2022-01-01</i>
+                        </div>
+                        <div class="card-body">
+                            <p>Worked out, eaten healthy, and practiced mindfulness.</p>
+                        </div>
+                        <div class="card-options">
+                            <button type="button" id="editButton">Edit</button>
+                            <button type="button" id="deleteButton">Delete</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-title">
+                            <p class="mood">I'm happy</p>
+                            <i class="date">2022-01-01</i>
+                        </div>
+                        <div class="card-body">
+                            <p>Worked out, eaten healthy, and practiced mindfulness.</p>
+                        </div>
+                        <div class="card-options">
+                            <button type="button" id="editButton">Edit</button>
+                            <button type="button" id="deleteButton">Delete</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Only for small screens -->
+            <div class="entries-cta-small">
+                <div class="entries">
+                    <h2>Entries</h2>
+                    <p>2</p>
+                </div>
+                <div class="cta">
+                    <q>Consistency is key! Log your activities daily to unlock patterns and insights into your
+                        wellness.</q>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentYear"></span> | Victor Aderibigbe | Nigeria</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
 </body>
+
 </html>
