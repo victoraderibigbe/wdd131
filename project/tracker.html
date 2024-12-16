@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="styles/tracker-large.css">
 
     <script src="scripts/script.js" defer></script>
+    <script src="scripts/tracker.js" defer></script>
     <script src="../scripts/getdates.js" defer></script>
 </head>
 
@@ -76,14 +77,10 @@
                     <input type="submit" value="Add My Entry" id="addBtn">
                 </form>
                 <!-- Only for large screens -->
-                <div class="entries-cta-large">
+                <div class="entries-cta-large quote-box">
                     <div class="entries">
                         <h2>Entries</h2>
                         <p>2</p>
-                    </div>
-                    <div class="cta">
-                        <q>Consistency is key! Log your activities daily to unlock patterns and insights into your
-                            wellness.</q>
                     </div>
                 </div>
             </div>
@@ -95,44 +92,12 @@
                         <img src="images/sort-icon.png" alt="Sort icon">
                     </div>
                 </nav>
-                <div class="card-container">
-                    <div class="card">
-                        <div class="card-title">
-                            <p class="mood">I'm happy</p>
-                            <i class="date">2022-01-01</i>
-                        </div>
-                        <div class="card-body">
-                            <p>Worked out, eaten healthy, and practiced mindfulness.</p>
-                        </div>
-                        <div class="card-options">
-                            <button type="button" id="editButton">Edit</button>
-                            <button type="button" id="deleteButton">Delete</button>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-title">
-                            <p class="mood">I'm happy</p>
-                            <i class="date">2022-01-01</i>
-                        </div>
-                        <div class="card-body">
-                            <p>Worked out, eaten healthy, and practiced mindfulness.</p>
-                        </div>
-                        <div class="card-options">
-                            <button type="button" id="editButton">Edit</button>
-                            <button type="button" id="deleteButton">Delete</button>
-                        </div>
-                    </div>
-                </div>
+                <div class="card-container"></div>
             </div>
             <!-- Only for small screens -->
-            <div class="entries-cta-small">
+            <div id="quoteBox" class="entries-cta-small quote-box">
                 <div class="entries">
                     <h2>Entries</h2>
-                    <p>2</p>
-                </div>
-                <div class="cta">
-                    <q>Consistency is key! Log your activities daily to unlock patterns and insights into your
-                        wellness.</q>
                 </div>
             </div>
         </section>
