@@ -38,3 +38,16 @@ const getProducts = () => {
 };
 
 document.addEventListener("DOMContentLoaded", () => getProducts());
+
+document.querySelector(".product-form").addEventListener("submit", (event) => {
+  event.preventDefault();
+
+  let reviewCount = localStorage.getItem("reviewCount");
+  reviewCount = reviewCount ? parseInt(reviewCount, 10) : 0;
+
+  reviewCount += 1;
+
+  localStorage.setItem("reviewCount", reviewCount);
+
+  window.location.href = "review.html";
+});
